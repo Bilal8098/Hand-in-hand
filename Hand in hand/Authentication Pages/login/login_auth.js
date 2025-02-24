@@ -3,17 +3,14 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 document.querySelector('.login-form').addEventListener('submit', async (e) => {
     e.preventDefault();
-
     // Get Input Values
     const email = document.querySelector('#username').value;
     const password = document.querySelector('#password').value;
-
     // Supabase Authentication - Sign In
     const { data, error } = await supabase.auth.signInWithPassword({
       email: email,
       password: password,
     });
-
     if (error) {
       alert('Login failed: ' + error.message);
     } else {

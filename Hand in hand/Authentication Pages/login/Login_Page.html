@@ -3,40 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hand In Hand - Login</title>
+    <title>Login</title>
     <link rel="stylesheet" href="Login_Page.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </head>
 <body>
     <header class="title-container">
-        <h1><span class="green">Hand</span><span class="blue">_In_</span><span class="green">Hand</span></h1>
+        <img src="j.jpg" alt="Hand In Hand">
     </header>
-    
+
     <main>
         <section class="login-container">
             <header class="login-header">
                 <h2>Welcome Back</h2>
                 <p>Please login to your account</p>
             </header>
-            
+
             <form class="login-form" action="#" method="POST">
                 <div class="form-group">
-                    <label for="username">Email</label>
-                    <input type="email" id="username" name="username" required>
-                </div>
-                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="Email" required>
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
                 <button type="submit" class="login-button">Login</button>
             </form>
-            
+
             <footer class="login-footer">
-                <p>Don't have an account? <a href="#">Sign Up</a></p>
+                <p>Don't have an account? <a href="Create.html">Sign Up</a></p>
             </footer>
         </section>
     </main>
-
-    <script src="login.js"></script>
+    <script src="login_auth.js"></script>
 </body>
 </html>
