@@ -12,7 +12,6 @@
         <div class="card">
             <h1>Welcome to</h1>
             <h2><span class="hand">Hand</span> <span class="in">in</span><span class="hand">Hand</span> </h2>
-           
             <p>Please create your account</p>
             <form>
                 <label for="username">Username</label>
@@ -23,11 +22,18 @@
                 
                 <label for="password">Password</label>
                 <input type="password" id="password" required>
-                
-                <button type="submit" class="btn">Sign Up</button>
+
+                <label for="birthdate">BirthDate</label>
+                <input type="date" id="birthdate">
+
+                <label for="location">Location</label>
+                <input type="text" id="location">
+
+                <button type="submit" class="btn" id="registerBtn">Sign Up</button>
             </form>
             <p>Already have an account? <a href="/Hand in hand/Authentication Pages/Login/Login_Page.html">Login</a></p>
         </div>
     </div>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
